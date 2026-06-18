@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio JS - Calculadora de Pedido</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <div class="cabecalho">
+        <span class="tag">Desafio Capítulos 1 e 2</span>
+        <h1>Calculadora de Pedido</h1>
+        <p>Preencha os dados do produto e calcule o resumo da compra.</p>
+      </div>
+
+      <form class="formulario">
+        <div class="campo">
+          <label for="inProduto">Produto</label>
+          <input type="text" id="inProduto" placeholder="Ex: Teclado mecânico">
+        </div>
+
+        <div class="campo dupla">
+          <div>
+            <label for="inPreco">Preço unitário R$</label>
+            <input type="text" id="inPreco" placeholder="Ex: 150.00">
+          </div>
+
+          <div>
+            <label for="inQuantidade">Quantidade</label>
+            <input type="text" id="inQuantidade" placeholder="Ex: 3">
+          </div>
+        </div>
+
+        <div class="campo">
+          <label for="inFrete">Frete R$</label>
+          <input type="text" id="inFrete" placeholder="Ex: 20.00">
+        </div>
+
+        <input type="button" value="Calcular Pedido" id="btCalcular">
+      </form>
+
+      <section class="resultado" aria-live="polite">
+        <h2>Resumo</h2>
+        <p id="outProduto">Produto: --</p>
+        <p id="outSubtotal">Subtotal: --</p>
+        <p id="outDesconto">Desconto: --</p>
+        <p id="outTotal">Total a pagar: --</p>
+        <p id="outParcelas">Parcelamento: --</p>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
